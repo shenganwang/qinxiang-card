@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>冯美源 - 营销总监 | 沁祥酒业</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #8B0000 0%, #A52A2A 100%);
+            color: #fff; min-height: 100vh;
+            display: flex; justify-content: center; align-items: center;
+            padding: 20px; position: relative; overflow-x: hidden;
+        }
+        body::before {
+            content: ''; position: absolute; top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background: radial-gradient(circle, rgba(255,215,0,0.05) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+        @keyframes rotate { 0%{transform:rotate(0)} 100%{transform:rotate(360deg)} }
+        .card {
+            width: 100%; max-width: 400px;
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(10px);
+            border-radius: 24px;
+            border: 1px solid rgba(255,215,0,0.2);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden; position: relative; z-index: 1;
+        }
+        .header { text-align: center; padding: 36px 20px 24px;
+            background: linear-gradient(to bottom, rgba(139,0,0,0.3), transparent); }
+        .logo-circle {
+            width: 120px; height: 120px; margin: 0 auto 16px;
+            background: linear-gradient(145deg, #FFD700, #CFB53B);
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 10px 30px rgba(255,215,0,0.3); font-size: 52px;
+        }
+        .company-name { font-size: 26px; font-weight: bold; color: #FFD700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3); letter-spacing: 4px; margin-bottom: 6px; }
+        .brand-tag { font-size: 13px; color: rgba(255,255,255,0.75); letter-spacing: 2px; }
+        .profile { padding: 24px 30px; text-align: center;
+            border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .name { font-size: 30px; font-weight: bold; margin-bottom: 6px; }
+        .title { font-size: 17px; color: #FFD700; margin-bottom: 6px; font-weight: 500; }
+        .company { font-size: 15px; color: rgba(255,255,255,0.85); }
+        .contact { padding: 8px 30px 16px; }
+        .contact-item {
+            display: flex; align-items: center; padding: 14px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            cursor: pointer; transition: all .3s;
+        }
+        .contact-item:last-child { border-bottom: none; }
+        .contact-item:hover { padding-left: 8px; background: rgba(255,255,255,0.03); border-radius: 10px; }
+        .icon { width: 42px; height: 42px;
+            background: linear-gradient(145deg, #FFD700, #CFB53B);
+            border-radius: 11px; display: flex; align-items: center; justify-content: center;
+            margin-right: 14px; font-size: 18px;
+            box-shadow: 0 4px 12px rgba(255,215,0,0.2); }
+        .contact-text { flex: 1; font-size: 15px; color: #fff; line-height: 1.5; }
+        .contact-text small { display: block; font-size: 12px; color: rgba(255,255,255,0.55); }
+        .arrow { color: rgba(255,255,255,0.5); font-size: 16px; }
+        .business { padding: 20px 30px; background: rgba(0,0,0,0.15);
+            margin: 16px 20px; border-radius: 14px; text-align: center; }
+        .business-title { font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 6px; letter-spacing: 2px; }
+        .business-desc { font-size: 19px; font-weight: bold; color: #FFD700; }
+        .action { padding: 24px 30px 10px; }
+        .btn-primary {
+            display: block; width: 100%; padding: 16px;
+            background: linear-gradient(145deg, #FFD700, #CFB53B);
+            color: #8B0000; font-size: 19px; font-weight: bold;
+            border-radius: 50px; text-decoration: none; text-align: center;
+            box-shadow: 0 8px 24px rgba(255,215,0,0.35);
+            transition: all .3s; border: none; cursor: pointer; letter-spacing: 2px;
+        }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(255,215,0,0.45); }
+        .btn-secondary {
+            display: block; width: 100%; padding: 14px; margin-top: 10px;
+            background: transparent; color: #FFD700; font-size: 15px;
+            border: 2px solid #FFD700; border-radius: 50px;
+            text-decoration: none; text-align: center; cursor: pointer; transition: all .3s;
+        }
+        .btn-secondary:hover { background: rgba(255,215,0,0.1); }
+        .footer { padding: 18px; text-align: center; color: rgba(255,255,255,0.5);
+            font-size: 11px; border-top: 1px solid rgba(255,255,255,0.08); margin-top: 10px; }
+        .fade-in { animation: fadeInUp .6s ease forwards; opacity: 0; }
+        @keyframes fadeInUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+        .delay-1{animation-delay:.1s} .delay-2{animation-delay:.2s} .delay-3{animation-delay:.3s}
+    </style>
+</head>
+<body>
+<div class="card">
+    <div class="header">
+        <div class="logo-circle">🍷</div>
+        <div class="company-name">沁祥酒业</div>
+        <div class="brand-tag">QINXIANG · 窖藏纯粮散酒</div>
+    </div>
+
+    <div class="profile">
+        <div class="name">冯美源</div>
+        <div class="title">营销总监</div>
+        <div class="company">四川沁祥供应链管理有限公司</div>
+    </div>
+
+    <div class="contact">
+        <!-- 电话 -->
+        <div class="contact-item" onclick="location.href='tel:13219360813'">
+            <div class="icon">📞</div>
+            <div class="contact-text">132 1936 0813<small>点击拨打</small></div>
+            <div class="arrow">›</div>
+        </div>
+        <!-- 地址 → 点击唤起地图 -->
+        <div class="contact-item" onclick="openMap()">
+            <div class="icon">📍</div>
+            <div class="contact-text">
+                四川省泸州市江阳区宝珠街4号1幢5层
+                <small>点击导航到公司</small>
+            </div>
+            <div class="arrow">›</div>
+        </div>
+    </div>
+
+    <div class="business">
+        <div class="business-title">核心业务</div>
+        <div class="business-desc">窖藏纯粮散酒 · 诚招全国加盟</div>
+    </div>
+
+    <div class="action">
+        <button class="btn-primary" onclick="location.href='tel:13219360813'">📞 立即致电咨询加盟</button>
+        <button class="btn-secondary" onclick="saveContact()">💾 保存名片至通讯录</button>
+    </div>
+
+    <div class="footer">© 四川沁祥供应链管理有限公司</div>
+</div>
+
+<script>
+    // 打开地图导航（优先高德/腾讯地图网页，手机上会自动跳转App）
+    function openMap() {
+        var addr = encodeURIComponent('四川省泸州市江阳区宝珠街4号1幢5层');
+        // 腾讯地图（兼容性好）
+        window.open('https://apis.map.qq.com/uri/v1/marker?marker=coord:28.866,105.443;title=沁祥酒业;addr=' + addr);
+    }
+
+    // 保存通讯录提示
+    function saveContact() {
+        if (navigator.userAgent.match(/MicroMessenger/i)) {
+            alert('请在浏览器中打开，点击右上角···选择"在浏览器打开"后可保存名片\n\n冯美源\n营销总监\n132 1936 0813\n四川省泸州市江阳区宝珠街4号1幢5层');
+        } else {
+            alert('请手动保存：\n姓名：冯美源\n职位：营销总监\n电话：13219360813\n地址：四川省泸州市江阳区宝珠街4号1幢5层');
+        }
+    }
+</script>
+</body>
+</html>
